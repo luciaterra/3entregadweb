@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./image/mifondo.jpg);
+}
+
+.encabezado{
+    color: rgba(0, 110, 255, 0.853);
+    padding: 15px;
+}
+
+
+.main {
+    list-style: none;
+    color: aqua;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    div.navIzq {
+        color:aqua;
+        grid-area: navIzq;
+    }
+
+
+    li {
+        color:aqua;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+    div.navDer {
+        color:aqua
+        grid-area: navDer;
+    }
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gridContainer {
+        display: grid;
+        grid-template-areas:
+            "navIzq navIzq header header navDer navDer""parrafo parrafo parrafo img img img""footer footer footer footer footer footer";
+        grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+        grid-template-rows: 100px auto 200px;
+    }
+
+    header {
+        grid-area: header;
+        text-align: center;
+    }
+
+    div.navIzq {
+        grid-area: navIzq;
+    }
+
+    header {
+        border-bottom: 2px solid black;
+    }
+
+    header ul li {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .bordesRedondeados {
+        border-radius: 2px;
+    }
+
+    .textos {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(246, 221, 83);
+    }
+
+
+    footer {
+        color: rgba(0, 110, 255, 0.853);
+        text-align: center;
+    }
+
+    footer ul li {
+        color: rgba(0, 110, 255, 0.853);
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
